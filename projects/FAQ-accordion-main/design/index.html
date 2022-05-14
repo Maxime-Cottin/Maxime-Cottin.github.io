@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+   <meta charset="UTF-8">
+   <!--Balise de réglagle du zoom en fonction du dispositif d'affichage-->
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!--Link du favicon au format 32x32px-->
+   <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png">
+   <!--Link du ou des fichiers css-->
+   <link rel="stylesheet" href="../design/style.css">
+   <!--Titre du document-->
+   <title>
+      FAQ accordéon
+   </title>
+</head>
+<body>
+   <!-- Illustration du dé qui sera en position absolue par dessus le reste -->
+   <img src="../images/illustration-box-desktop.svg" class="box">
+   <!-- Boite contenant l'ensemble de la page -->
+   <div id="containerBox">
+      <div id="imgside">
+         <!-- Illustrations contenues sur le coté gauche de la boite -->
+         <img src="../images/illustration-woman-online-desktop.svg" class="desk">
+         <img src="../images/bg-pattern-desktop.svg" class="bgPattern">
+      </div>
+      <!-- Coté texte de la boite contenant les questions et réponses -->
+      <div id="textSide">
+         <h1>FAQ</h1>
+         <div class="accordionMenu">
+            <!-- Groupe de question / réponses 1 -->
+            <button class="accordion">How many team members can I invite?</button>
+            <div class="panel">
+               <p>You can invite up to 2 additional users on the Free plan. There is no limit on team members for the Premium plan.</p>
+            </div>
+            <!-- Groupe de question / réponses 2 -->
+            <button class="accordion">What is the maximum file upload size?</button>
+            <div class="panel">
+               <p>No more than 2GB. All files in your account must fit your allotted storage space.</p>
+            </div>
+            <!-- Groupe de question / réponses 3 -->
+            <button class="accordion">How do I reset my password?</button>
+            <div class="panel">
+               <p>Click “Forgot password” from the login page or “Change password” from your profile page. A reset link will be emailed to you.</p>
+            </div>
+            <!-- Groupe de question / réponses 4 -->
+            <button class="accordion">Can I cancel my subscription?</button>
+            <div class="panel">
+               <p>Yes! Send us a message and we’ll process your request no questions asked.</p>
+            </div>
+            <!-- Groupe de question / réponses 5 -->
+            <button class="accordion">Do you provide additional support?</button>
+            <div class="panel">
+               <p>Chat and email support is available 24/7. Phone lines are open during normal business hours.</p>
+            </div>
+         </div>
+      </div>
+   </div>
+   <!--Script d'accordéon-->
+   <script src="../design/accordion.js"></script>
+</body>
+</html>

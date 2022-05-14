@@ -1,0 +1,133 @@
+body {
+   /* Imposition de la police sur toute la page */
+   font-family: 'Kumbh Sans', sans-serif;
+   font-size: 12px;
+   /* Mise en place du dégradé de couleur en fond de page */
+   background: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+   /* Mise en forme globale de la page */
+   min-height: 100vh;
+   padding: 0;
+   margin: 0;
+   /* Display settings */
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+/* Mise en forme de la boite */
+#containerBox {
+   /* Utilisation de grid pour diviser en 2 la boite de contenu */
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   /* Configuration de la taille de la boite avec marge intérieure */
+   width: 920px;
+   min-width: 920px;
+   height: 510px;
+   min-height: 510px;
+   box-sizing: border-box;
+   padding: 30px;
+   /* Ajout de la couleur de fond et des arrondis au coins de la boite */
+   background-color: white;
+   border-radius: 25px;
+}
+
+/* Mise en forme de la partie texte de la boite */
+.textSide h1 {
+   font-weight: 700;
+}
+
+/* Alignement en colonne des questions de la FAQ */
+.accordionMenu {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+}
+
+/* Mise en forme des questions de la FAQ */
+.accordion {
+   background-color: transparent;
+   border: none;
+   border-bottom: grey solid 1px;
+   outline: none;
+   cursor: pointer;
+   font-family: 'Kumbh Sans', sans-serif;
+   font-size: 12px;
+   display: block;
+   padding: 28px 0 28px 0;
+   text-align: left;
+   font-weight: 700;
+}
+
+/* Mise en place de la petite flèche à droite des questions */
+.accordion::after {
+   content: url(../images/icon-arrow-down.svg);
+   float: right;
+   transition-duration: 0.5s;
+   transition-property: transform;
+}
+
+/* Rotation de la flèche au déploiement de la réponse */
+.active::after {
+   content: url(../images/icon-arrow-down.svg);
+   transform: rotate(180deg);
+}
+
+/* Mise en forme des réponses non affichées */
+.panel {
+   background-color: transparent;
+   display: none;
+   overflow: hidden;
+}
+
+/* Coloration du texte des réponses */
+.panel p {
+   color: grey;
+}
+
+/* Mise en forme des réponses affichées */
+.panel.show {
+   background-color: transparent;
+   display: block;
+   overflow: hidden;
+}
+
+/* Placement du dé dans la partie image */
+.box {
+   display: none;
+}
+
+/* Suppresion des parties qui dépassent de la boite */
+#containerBox {
+   overflow: hidden;
+}
+
+/* Placement de l'illustration du bureau */
+.desk {
+   transform: translate(-110px, 25px);
+   width: 500px;
+   z-index: 1;
+}
+
+/* Placement de l'illustration derrière le bureau */
+.bgPattern {
+   transform: translate(-110px);
+   margin-top: -380px;
+   width: 500px;
+   z-index: -1;
+}
+
+@media (max-width: 1024px) and (min-width: 921px) {
+   #containerBox {
+      transform: scale(0.95);
+   }
+}
+
+@media (max-width: 920px) and (min-width: 769px) {
+   #containerBox {
+      transform: scale(0.80);
+   }
+}
+
+@media (max-width: 768px) and (min-width: 486) {
+   /* Mise en page mobile */
+}
