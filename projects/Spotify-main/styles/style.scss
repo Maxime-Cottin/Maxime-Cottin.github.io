@@ -1,0 +1,300 @@
+// Colors
+$green: #1ed760;
+$blue: #2940ab;
+
+// Body settings
+body {
+  margin: 0;
+  padding: 0;
+  font-family: circular;
+  font-size: 16px;
+}
+
+// Header settings
+header {
+  background-color: black;
+  position: relative;
+  width: 100vw;
+  overflow-x: clip;
+  .mobileNav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    img {
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+      height: 2rem;
+    }
+    .burgerMenu {
+      z-index: 10;
+      background-color: white;
+      width: 1.5rem;
+      height: 0.2rem;
+      margin-top: auto;
+      margin-bottom: auto;
+      border-radius: 0.1rem;
+      position: relative;
+      transition: all ease-in-out 0.4s;
+      &:before {
+        position: absolute;
+        content: "";
+        background-color: white;
+        width: 1.5rem;
+        height: 0.2rem;
+        border-radius: 0.1rem;
+        top: 0.5em;
+        transition: all ease-in-out 0.4s;
+      }
+      &:after {
+        position: absolute;
+        content: "";
+        background-color: white;
+        width: 1.5rem;
+        height: 0.2rem;
+        border-radius: 0.1rem;
+        bottom: 0.5rem;
+        transition: all ease-in-out 0.4s;
+      }
+    }
+    .burgerMenu-active {
+      z-index: 10;
+      background-color: white;
+      width: 1.5rem;
+      height: 0;
+      margin-top: auto;
+      margin-bottom: auto;
+      border-radius: 0.1rem;
+      position: relative;
+      transition: all ease-in-out 0.4s;
+      &:before {
+        position: absolute;
+        content: "";
+        background-color: white;
+        width: 1.5rem;
+        height: 0.2rem;
+        border-radius: 0.1rem;
+        top: -0.1rem;
+        transform: rotate(45deg);
+        transition: all ease-in-out 0.4s;
+      }
+      &:after {
+        position: absolute;
+        content: "";
+        background-color: white;
+        width: 1.5rem;
+        height: 0.2rem;
+        border-radius: 0.1rem;
+        bottom: -0.1rem;
+        transform: rotate(-45deg);
+        transition: all ease-in-out 0.4s;
+      }
+    }
+  }
+  nav {
+    background-color: black;
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+    padding: 2.5rem;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    transform: translateX(100vw);
+    transition: all ease-in-out 0.2s;
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      li {
+        padding-bottom: 1.5rem;
+        transform: translateX(100vw);
+        transition: all ease-in-out 0.1s;
+        &:nth-of-type(4) {
+          padding-bottom: 0;
+        }
+        a {
+          text-decoration: none;
+          color: white;
+          font-family: circular-bold;
+          font-size: 2rem;
+          &:hover {
+            color: $green;
+          }
+        }
+        .userInteract {
+          font-family: circular;
+          font-size: 1.5rem;
+        }
+      }
+      .separator {
+        background-color: white;
+        width: 1.25rem;
+        height: 2px;
+        margin-top: 1rem;
+        margin-bottom: 2.5rem;
+      }
+    }
+    img {
+      height: 1.7rem;
+      transform: translateX(100vw);
+      transition: all ease-in-out 0.1s;
+    }
+  }
+  .opened {
+    transform: translateX(0);
+    transition: all ease-in-out 0.2s;
+    li {
+      transform: translateX(0);
+      transition: all ease-in-out 0.1s;
+    }
+    img {
+      transform: translateX(0);
+      transition: all ease-in-out 0.1s;
+      transition-delay: 0.35s;
+    }
+  }
+}
+
+// Hero banner settings
+.heroBanner {
+  height: 100vh;
+  background-color: $blue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  color: $green;
+  h1 {
+    font-size: 3rem;
+    font-family: circular-black;
+    line-height: 3.5rem;
+    margin: 0;
+    padding-bottom: 1rem;
+  }
+  p {
+    margin: 0;
+    padding-bottom: 2rem;
+  }
+  a {
+    color: $blue;
+    padding: 1rem 2rem;
+    background-color: $green;
+    border-radius: 2rem;
+    text-transform: uppercase;
+    font-family: circular-bold;
+    text-decoration: none;
+    font-size: 0.875rem;
+  }
+}
+
+// Footer settings
+footer {
+  background-color: black;
+  padding-top: 3rem;
+  padding-bottom: 1.5rem;
+  img {
+    height: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  ul {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    list-style: none;
+    li {
+      padding-bottom: 1rem;
+      padding-top: 0.2rem;
+      font-size: 1rem;
+      &:first-of-type {
+        font-size: 0.75rem;
+        color: #919496;
+        text-transform: uppercase;
+        margin-top: 3rem;
+        margin-bottom: 1.5rem;
+        padding-bottom: 0;
+        padding-top: 0;
+        font-family: circular-black;
+      }
+      a {
+        text-decoration: none;
+        color: white;
+        &:hover {
+          color: $green;
+        }
+      }
+    }
+  }
+  .logos {
+    margin: 7.5rem 1rem 0;
+    a {
+      padding: 0.625rem;
+      border-radius: 50%;
+      background-color: #222326;
+      margin-right: 1rem;
+      i {
+        color: white;
+        font-size: 1.25rem;
+        width: 1.5rem;
+        text-align: center;
+      }
+    }
+  }
+  .country {
+    color: #919191;
+    font-size: 0.625rem;
+    padding-right: 1rem;
+    text-align: right;
+    p {
+      margin: 0;
+    }
+  }
+  .credits {
+    font-family: circular;
+    display: flex;
+    justify-content: space-between;
+    a {
+      font-size: 0.625rem;
+      color: #919191;
+      text-transform: none;
+      &:hover {
+        color: $green;
+      }
+    }
+    p {
+      color: #919191;
+      font-size: 0.625rem;
+      text-align: right;
+      margin-right: 1rem;
+    }
+    ul {
+      margin: 0;
+      li {
+        margin: 0;
+        padding-top: 0.625rem;
+        padding-bottom: 0.625rem;
+        &:first-of-type,
+        &:nth-of-type(2) {
+          display: inline-block;
+        }
+        &:first-of-type {
+          margin-right: 2.5rem;
+          font-family: circular;
+        }
+        a {
+          &:hover {
+            color: $green;
+          }
+        }
+      }
+    }
+  }
+}

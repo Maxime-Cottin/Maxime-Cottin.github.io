@@ -1,0 +1,14 @@
+@font-face {
+  font-family: circular;
+  src: url("/assets/fonts/CircularStd-Book.otf") format("opentype");
+}
+@font-face {
+  font-family: circular-bold;
+  src: url("/assets/fonts/CircularStd-Bold.otf") format("opentype");
+}
+@font-face {
+  font-family: circular-black;
+  src: url("/assets/fonts/CircularStd-Black.otf") format("opentype");
+}
+
+/*# sourceMappingURL=fonts.css.map */

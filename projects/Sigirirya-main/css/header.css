@@ -1,0 +1,33 @@
+header {
+  height: 40px;
+  width: 80vw;
+  position: fixed;
+  top: 20px;
+  display: flex;
+  align-items: center;
+}
+
+nav {
+  min-width: 100%;
+}
+
+.navList {
+  min-width: 100%;
+  min-height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.navItem {
+  display: inline-flex;
+  text-transform: uppercase;
+}
+
+.navLink {
+  text-decoration: none;
+  color: whitesmoke;
+  font-size: 20px;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+   <meta charset="UTF-8">
+   <!--Balise de réglagle du zoom en fonction du dispositif d'affichage-->
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!--Link du favicon au format 32x32px-->
+   <link rel="icon" type="image/png" sizes="32x32" href="/res/favicon.ico">
+   <!--Link du ou des fichiers css-->
+   <link rel="stylesheet" href="../css/form.css">
+   <link rel="stylesheet" href="../css/header.css">
+   <!--Titre de la page-->
+   <title>
+      Formulaire de contact
+   </title>
+</head>
+<body>
+   <header id="accueil">
+      <nav>
+         <ul class="navList">
+            <li class="navItem">
+               <a class="navLink" href="index.html#section1" title="Lien de retour à l'accueil">accueil</a>
+            </li>
+            <li class="navItem">
+               <a class="navLink" href="index.html#section2" title="Lien d'accès à l'histoire du lieu">le lieu</a>
+            </li>
+            <li class="navItem">
+               <a class="navLink" href="index.html#section3" title="Lien vers la carte du lieu">localisation</a>
+            </li>
+            <li class="navItem">
+               <a class="navLink" href="contact.html" title="Formulaire de contact">contact</a>
+            </li>
+         </ul>
+      </nav>
+   </header>
+
+   <section id="formulaire">
+      <form action="">
+            <label for="nom">Votre nom :</label>
+            <input type="text" name="nom" id="nom" required>
+            <label for="mail">Votre mail :</label>
+            <input type="email" name="mail" id="mail" required>
+            <label for="message">Votre message :</label>
+            <textarea id="message" name="message" rows="20"></textarea>
+      </form>
+   </section>
+   <footer>
+      <p>
+         Website made by Maxime Cottin
+      </p>
+   </footer>
+</body>
+</html>

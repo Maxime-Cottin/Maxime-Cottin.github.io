@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background: linear-gradient(225deg, #6a89cc, #e55039);
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+
+p {
+  font-size: 20px;
+}
+
+img {
+  box-shadow: 0 3px 8px black;
+}
+
+#section1,
+#section2,
+#section3 {
+  width: 80vw;
+}
+
+#section1 {
+  height: 700px;
+  background-image: url(/res/brian-kyed-8NpelZe-EzM-unsplash.jpg);
+  background-size: cover;
+  background-position-x: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#section1 > h1,
+h2 {
+  color: whitesmoke;
+}
+
+#section1 > h1 {
+  font-size: 72px;
+  width: 80%;
+  text-align: center;
+  margin: 20px;
+  padding-bottom: 20px;
+  border-bottom: whitesmoke 1px solid;
+}
+
+#section1 > h2 {
+  font-size: 32px;
+}
+
+#section2 {
+  background-color: rgba(255, 255, 255, 30%);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#section2 > div {
+  width: 50%;
+  padding: 40px;
+  width: 450px;
+}
+
+.s2left > h3 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+#section2 div > p {
+  margin-bottom: 10px;
+}
+
+.source {
+  margin-top: 15px;
+}
+
+.source > a {
+  text-decoration: none;
+  font-weight: bold;
+  color: blue;
+}
+
+.s2right > img {
+  float: left;
+  margin: 0 25px 15px 0;
+}
+
+#section3 {
+  background-color: rgba(255, 255, 255, 30%);
+  display: flex;
+  justify-content: center;
+}
+
+#section3 > iframe {
+  margin: 20px 0;
+}
+
+footer {
+  height: 40px;
+  width: 100vw;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer > p,
+a {
+  color: whitesmoke;
+  font-weight: 200;
+  font-size: 12px;
+}
+
+@media screen and (max-width: 768px) {
+  #section1,
+  #section2,
+  #section3 {
+    width: 100vw;
+  }
+}

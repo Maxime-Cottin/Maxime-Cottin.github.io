@@ -1,0 +1,85 @@
+/* Normalize the body and layout the body of the page */
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(45deg, #e67e22, #c0392b);
+}
+
+/* Layout the form container */
+#container {
+    background-color: rgb(39, 39, 39);
+    width: 450px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+}
+
+/* Set the title */
+#container h1 {
+    color: white;
+    font-size: 35px;
+    font-weight: normal;
+    margin-bottom: 0;
+    margin-top: 40px;
+}
+
+/* Set the general settings of the inputs and hover */
+#container input {
+    border: solid 2px #c0392b;
+    height: 50px;
+    border-radius: 30px;
+    margin: 15px;
+    text-align: center;
+    background-color: rgb(39, 39, 39);
+}
+
+#container input:focus {
+    outline: none;
+}
+
+/* Set the username and password settings */
+#username, #password {
+    color: #e67e22;
+    width: 225px;
+    transition: .5s;
+}
+
+#username:focus, #password:focus {
+    border: solid 2px #e67e22;
+    width: 350px;
+    transition: .5s;
+}
+
+/* Set the loginbtn settings */
+#loginbtn {
+    color: white;
+    width: 125px;
+    transition: .3s;
+}
+
+#loginbtn:hover {
+    border: solid 2px #e67e22; 
+}
+
+@media screen and (max-width: 600px) {
+    #container {
+        width: 300px;
+    }
+
+    #username, #password {
+        width: 150px;
+    }
+
+    #username:focus, #password:focus {
+        width: 250px;
+    }
+}
